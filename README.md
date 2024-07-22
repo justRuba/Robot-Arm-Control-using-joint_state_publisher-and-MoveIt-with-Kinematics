@@ -90,3 +90,12 @@ The command roslaunch robot_arm_pkg check_motors_gazebo.launch launches a Gazebo
 ![WhatsApp Image 2024-07-22 at 21 47 55_187b1c26](https://github.com/user-attachments/assets/79e24626-37ad-4edd-82e9-cef72088918d)
 
 ## Controlling the robot arm using Moveit and kinematics
+
+MoveIt is a ROS framework for motion planning and control of robotic arms, enabling tasks like path planning and collision avoidance. It uses kinematics to calculate the robot's end-effector position based on joint angles, facilitating precise movement control and execution.
+
+ ```bash
+   roslaunch moveit_pkg demo.launch
+ ```
+
+![WhatsApp Image 2024-07-22 at 23 49 34_ccfcd847](https://github.com/user-attachments/assets/a09d7558-322f-40fe-879d-e412f37a114c)
+
