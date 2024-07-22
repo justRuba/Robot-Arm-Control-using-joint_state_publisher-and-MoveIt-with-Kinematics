@@ -12,6 +12,7 @@ The package used for this setup is a custom fork of the [original repository on 
 
 ## Requirements
 - Create a workspace
+
 ** Source ROS Environment **
  ```bash
    source /opt/ros/noetic/setup.bash
