@@ -64,4 +64,29 @@ Verify ROS Package Path
   catkin_make
 ```
 
-     
+## Controlling the robot arm using joint_state_publisher
+
+joint_state_publisher is a ROS tool that publishes the state of a robot’s joints, including their positions, velocities, and efforts. It is commonly used for visualizing and simulating robot movements in tools like RViz. The tool also provides a GUI for manually adjusting joint positions, aiding in testing and debugging.
+
+ ```bash
+   sudo apt-get install ros-noetic-robot-state-publisher
+ ```
+
+The command sudo apt-get install ros-noetic-robot-state-publisher installs the robot_state_publisher package in ROS Noetic, which publishes the robot's joint and link states for visualization and simulation.
+
+ ```bash
+   roslaunch robot_arm_pkg check_motors.launch
+ ```
+
+The command roslaunch robot_arm_pkg check_motors.launch launches the check_motors file from the robot_arm_pkg package, typically used to start nodes for testing and verifying the robot arm's motors.
+
+![WhatsApp Image 2024-07-22 at 23 45 54_6ab01034](https://github.com/user-attachments/assets/8ecdf662-196b-448a-a903-35e993e8e611)
+
+ ```bash
+   roslaunch robot_arm_pkg check_motors_gazebo.launch
+ ```
+The command roslaunch robot_arm_pkg check_motors_gazebo.launch launches a Gazebo simulation for testing the robot arm's motors within the robot_arm_pkg package.
+
+![WhatsApp Image 2024-07-22 at 21 47 55_187b1c26](https://github.com/user-attachments/assets/79e24626-37ad-4edd-82e9-cef72088918d)
+
+## Controlling the robot arm using Moveit and kinematics
