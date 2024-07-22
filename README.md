@@ -12,27 +12,27 @@ The package used for this setup is a custom fork of the [original repository on 
 
 ## Requirements
 - Create a workspace
-  1. Source ROS Environment
+** Source ROS Environment **
  ```bash
    source /opt/ros/noetic/setup.bash
  ```
-  2. Create a Catkin Workspace
+** Create a Catkin Workspace **
  ```bash
    mkdir -p ~/catkin_ws/src
  ```
 This command creates a new directory named catkin_ws in the home directory, with a src subdirectory where we will place our ROS packages.
-  3. Build the Workspace
+** Build the Workspace **
  ```bash
    cd ~/catkin_ws/
    catkin_make
  ```
 The cd command navigates to the catkin_ws directory. The catkin_make command builds the workspace, compiling all ROS packages located in the src directory.
-  4. Source the Workspace Setup
+** Source the Workspace Setup **
  ```bash
    source devel/setup.bash
  ```
 After building the workspace, this command sources the workspace's setup file to configure your environment with the workspace-specific ROS packages.
-  5. Verify ROS Package Path
+** Verify ROS Package Path **
  ```bash
    echo $ROS_PACKAGE_PATH
  ```
