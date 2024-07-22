@@ -40,5 +40,15 @@ Verify ROS Package Path
  ```bash
    echo $ROS_PACKAGE_PATH
  ```
-  
+
+- Add the “arduino_robot_arm” package to “src”
+```bash
+  cd ~/catkin_ws
+  rosdep install --from-paths src --ignore-src -r -y
+  sudo apt-get install ros-noetic-moveit
+  sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
+  sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
+  sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+```
+
      
