@@ -38,10 +38,11 @@ After building the workspace, this command sources the workspace's setup file to
 
 Verify ROS Package Path 
  ```bash
-   echo $ROS_PACKAGE_PATH
+   cd ~/catkin_ws/src
+   sudo apt install https://github.com/smart-methods/arduino_robot_arm
  ```
 
-- Add the “arduino_robot_arm” package to “src”
+- Add the (arduino_robot_arm) package to src
 ```bash
   cd ~/catkin_ws
   rosdep install --from-paths src --ignore-src -r -y
@@ -49,6 +50,18 @@ Verify ROS Package Path
   sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
   sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
   sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+```
+
+
+- Install all the dependencies
+```bash
+  cd ~/catkin_ws
+  rosdep install --from-paths src --ignore-src -r -y
+  sudo apt-get install ros-noetic-moveit
+  sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
+  sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
+  sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+  catkin_make
 ```
 
      
