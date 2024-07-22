@@ -3,7 +3,7 @@ This repository explains controlling a robot arm using ROS tools such as joint_s
 
 ## Reference Repository 
 
-The package used for this setup is a custom fork of the [original repository on GitHub](https://github.com/smart-methods/arduino_robot_arm).
+The package used for this setup is from the [original repository on GitHub](https://github.com/smart-methods/arduino_robot_arm).
 
 ## Setup Environment
 
